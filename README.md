@@ -370,7 +370,7 @@ import {NativeModules} from 'react-native'
   ### Key
   * Llave para cifrar insumos.
 
-#### Respuesta
+## Respuesta
 ```
 {
     "CodigoOperacion": "0000",
