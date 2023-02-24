@@ -218,6 +218,8 @@ export default RnBytteBioLibMiid;
 
 ## Metodos react-native-bytte-bio-lib-miid
 
+* Una vez instalado el plugin, la aplicación destino heredará el Javascript expuesto por este, el cual expone las siguientes operaciones:
+
 #### Captura Documento Reverso
 ```javascript
 import {NativeModules} from 'react-native'
@@ -248,6 +250,32 @@ import {NativeModules} from 'react-native'
   ### Key
   * Llave para cifrar insumos.
 
+## Respuesta 
+```
+{
+  "MensajeOriginal": "Captura Exitosa",
+  "StatusOperacion": true,
+  "MensajeRetorno": "Captura Exitosa",
+  "CodigoOperacion": "0000",
+  "VersionCedula": "03",
+  "NumeroTarjeta": "34423282YYYY",
+  "NumeroCedula": "103115988888",
+  "PrimerApellido": "GARZON",
+  "SegundoApellido": "...",
+  "PrimerNombre": "CARLOS",
+  "SegundoNombre": "ANDRES",
+  "NombresCompletos": "CARLOS ----- GARZON ----",
+  "Sexo": "M",
+  "FechaNacimiento": "1995/07/40",
+  "RH": "B+",
+  "TipoDedo": "2",
+  "TipoDedo2": "7",
+  "BarcodeBase64": "Barcode 64",
+  "Pais": "COLOMBIA",
+  "BitmapBase64": "",
+  "PathImagen": "/var/mobile/Containers/Data/Application/56D57ABF-CC11-45D6-9EE9-DD3AE5798D56/Documents/BDZ_2425E330-D7A9-4D61-8553-1BE6DABA83CD.btpa"
+}
+```
 
 #### Captura Documento Frente
 ```javascript
@@ -279,6 +307,19 @@ import {NativeModules} from 'react-native'
 
   ### Key
   * Llave para cifrar insumos.
+
+## Respuesta 
+
+```
+{
+  "CodigoOperacion": "0000",
+  "MensajeOriginal": "Captura exitosa",
+  "MensajeRetorno": "Ok Captura",
+  "PathImagen": "/data/user/0/xxxxxxxxxx/files/Docu…s/DF_IMG_6a6124c9_deb7_42ed_9d2a_6eb4899d28ce.jpg",
+  "PathImagenRostro": "/data/user/0/xxxxxxx.nuevaappemp/files/Docu…s/DF_IMG_a9784878_ba42_49f0_afd6_09735dcaa732.jpg",
+  "StatusOperacion": true
+}
+```
 
 #### Captura Facial
 ```javascript
@@ -329,6 +370,43 @@ import {NativeModules} from 'react-native'
   ### Key
   * Llave para cifrar insumos.
 
+#### Respuesta
+```
+{
+    "CodigoOperacion": "0000",
+    "MensajeOriginal": "Captura Exitosa",
+    "MensajeRetorno": "Ok Captura",
+    "StatusOperacion": true,
+    "FingerprintsObjects": [
+        {
+            "Fingerprint": "20",
+            "Minutia": "",
+            "PathBitmap": "/data/user/0/com.xxxxxxxxxx.nuevaappemp/files/Documents/FP_IMG_ecc33475_fb40_4705_9fd5_4dcdd601ec8c.jpg"
+        },
+        {
+            "Fingerprint": "3",
+            "Minutia": "",
+            "PathBitmap": "/data/user/0/com.xxxxxxxxxx.nuevaappemp/files/Documents/FP_IMG_b3ad988f_f394_4d17_9103_71fa262316ef.jpg"
+        },
+        {
+            "Fingerprint": "4",
+            "Minutia": "",
+            "PathBitmap": "/data/user/0/com.xxxxxxxxxx.nuevaappemp/files/Documents/FP_IMG_4e21f108_b2b4_4d2d_9fb1_daa07bff0d43.jpg"
+        },
+        {
+            "Fingerprint": "2",
+            "Minutia": "",
+            "PathBitmap": "/data/user/0/com.xxxxxxxxxx.nuevaappemp/files/Documents/FP_IMG_2a15be0b_61f0_4e81_afd8_0d2db4801300.jpg"
+        },
+        {
+            "Fingerprint": "5",
+            "Minutia": "",
+            "PathBitmap": "/data/user/0/com.xxxxxxxxxx.nuevaappemp/files/Documents/FP_IMG_948a03e3_2833_4701_a389_70282686a1b4.jpg"
+        }
+    ],
+    "plataforma": "Android"
+}
+```
 #### Captura Código QR
 ```javascript
 import {NativeModules} from 'react-native'
