@@ -122,13 +122,13 @@ Ruta por defecto : ***Ruta_Proyecto***/bytteTest/node_modules/react-native-bytte
 
 ![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/framework3.png)
 
-###### Licencia captura dactilar
+###### Licencia captura dactilar y captura facial
 
-Bytte proporciona el archivo de licencia para captura dactilar. Este archivo debe ser guardado en la raiz del proyecto IOS y embebido como recurso en la aplicación nativa tal como lo muestra la siguiente imagen.
+Bytte proporciona archivos de licencia para captura dactilar y facial. Estos archivos deben ser guardado en la raiz del proyecto IOS y embebido como recurso en la aplicación nativa tal como lo muestra la siguiente imagen.
 
 ![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/framework6.png)
 
-El nombre del archivo se envía por parámetro ***(namePath)*** en la captura dactilar.
+El nombre del archivo se envía por parámetro ***(namePath)*** en la captura dactilar y facial.
 
 
 ######   Permisos
