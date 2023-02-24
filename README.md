@@ -345,6 +345,18 @@ import {NativeModules} from 'react-native'
         }); 
     }
 ```
+
+## Códigos Respuesta
+
+```
+<string name="OK">0000</string><string name="TimeOut">0001</string>
+<string name="Cancelado_a_proposito">0002</string>
+<string name="Error_de_Licencia_MicroBlink">0111</string>
+<string name="Error_No_tiene_permisos_camara">0112</string>
+<string name="Error_de_Licencia_Biometria">0113</string>
+<string name="Error_Captura_de_huellas">0114</string>
+```
+
 ## Ejemplo Demo
 
 URL:  [http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/MiiD/bytteTest.zip](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/MiiD/bytteTest.zip)
