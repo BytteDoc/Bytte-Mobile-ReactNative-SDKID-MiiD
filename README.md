@@ -234,6 +234,20 @@ import {NativeModules} from 'react-native'
         }); 
     }
 ```
+  ### Pais 
+ * CO = Documento colombiano Hologramas.
+ * COV2 = Documento colombiano Digital.
+
+  ### License
+  * String enviado por bytte s.a.s para capturar documentos.
+
+  ### TimeOut
+
+  * Tiempo para cancelación automática de captura.
+
+  ### Key
+  * Llave para cifrar insumos.
+
 
 #### Captura Documento Frente
 ```javascript
@@ -252,13 +266,27 @@ import {NativeModules} from 'react-native'
     }
 ```
 
+  ### Pais 
+ * CO = Documento colombiano Hologramas.
+ * COV2 = Documento colombiano Digital.
+
+  ### License
+  * String enviado por bytte s.a.s para capturar documentos.
+
+  ### TimeOut
+
+  * Tiempo para cancelación automática de captura.
+
+  ### Key
+  * Llave para cifrar insumos.
+
 #### Captura Facial
 ```javascript
 import {NativeModules} from 'react-native'
 
 //Facial capture
     onCaptureFace = () =>{
-        NativeModules.RnBytteBioLibMiid.startFace((response)=>{
+        NativeModules.RnBytteBioLibMiid.startFace(namePath,key,(response)=>{
             var obj = JSON.parse(response);
             if(obj.StatusOperacion){
                 alert(obj.MensajeOriginal);
@@ -268,6 +296,12 @@ import {NativeModules} from 'react-native'
         }); 
     }
 ```
+
+  ### namePath 
+ * Nombre del archivo de licencia.
+
+  ### Key
+  * Llave para cifrar insumos.
 
 #### Captura Dactilar
 ```javascript
@@ -275,7 +309,7 @@ import {NativeModules} from 'react-native'
 
 //Fingerprint
     onCaptureFinger = () => {
-        NativeModules.RnBytteBioLibMiid.startFinger(finger,namePath,netkey,(response)=>{
+        NativeModules.RnBytteBioLibMiid.startFinger(finger,namePath,key,(response)=>{
             var obj = JSON.parse(response);
             if(obj.StatusOperacion){
                 alert(obj.MensajeOriginal);
@@ -285,6 +319,15 @@ import {NativeModules} from 'react-native'
         }); 
     }
 ```
+  ### finger
+  * 2 = Mano Derecha.
+  * 7 = Mano Izquierda.
+
+  ### namePath 
+ * Nombre del archivo de licencia.
+
+  ### Key
+  * Llave para cifrar insumos.
 
 #### Captura Código QR
 ```javascript
