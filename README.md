@@ -100,7 +100,7 @@ Luego de instalar las dependencias npm se ingresa a la carpeta ***ios*** y se ej
 
 Luego se ingresa al proyecto IOS y en la sección  ***Development Pods*** se busca la carpeta  ***RNBytteBioLibMiiD*** donde se encuentra los archivos correspondientes a la libreria. En la carpeta ***Frameworks*** se encuentran los binarios que deben ser embebidos de manera local al proyecto.
 
-![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/framework4.png)
+![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/framework6.png)
 
 Una vez agregados se valida que se encuentren  ***Embed & sign*** 
 
@@ -126,7 +126,7 @@ Ruta por defecto : ***Ruta_Proyecto***/bytteTest/node_modules/react-native-bytte
 
 Bytte proporciona archivos de licencia para captura dactilar y facial. Estos archivos deben ser guardado en la raiz del proyecto IOS y embebido como recurso en la aplicación nativa tal como lo muestra la siguiente imagen.
 
-![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/framework6.png)
+![Directories](http://www.bytte.com.co/ftpaccess/Varios/CarlosG/ReactNative/Licencias.png)
 
 El nombre del archivo se envía por parámetro ***(namePath)*** en la captura dactilar y facial.
 
