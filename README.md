@@ -31,7 +31,7 @@ Los factores limitantes para la integración del SDK son:
 * Para la compilación de aplicación en plataforma IOS, se requiere:
     > * XCode 12 o Superior con SDK IOS 12 o superior.
 
-#### 2.2. Instalación Plugin react-native-bytte-bio-lib-ID
+#### 2.2. Instalación Plugin react-native-bytte-bio-lib-miid
 
 #### 2.2.1 Configuración Token
 
