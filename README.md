@@ -77,7 +77,7 @@ always-auth=true
 
 #### 2.2.2 Instalación 
 
-`$ npm install react-native-bytte-bio-lib-id`
+`$ npm i react-native-rn-bytte-bio-lib-miid --save`
 
 
 Una vez instalado el plugin, se debe realizar la consulta a la aplicación para verificar que este quedó correctamente instalado.
